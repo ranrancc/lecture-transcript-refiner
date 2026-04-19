@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "请把 /path/to/20260304 苏涛 AI时代的大学课堂.txt 做听写校正。",
+    "expected": "Use MODE=proofread, preserve the original transcript's information density, and save a non-overwriting file with the suffix （已校正） beside the source."
+  },
+  {
+    "id": 2,
+    "prompt": "这份讲座转写稿已经校过一遍了，请保留口语风格，尽量原话，只修错别字和标点。",
+    "expected": "Use MODE=strict, avoid rewriting or summarizing, and only correct obvious dictation, punctuation, and paragraphing issues."
+  },
+  {
+    "id": 3,
+    "prompt": "把这个录音转文字书面整理成 Obsidian 讲座回顾笔记。",
+    "expected": "Run the two-pass workflow: first save a proofread transcript, then use prompt_rewrite.md to create an Obsidian lecture note with YAML front matter and an original-file link."
+  }
+]
